@@ -32,6 +32,12 @@ class Gateway extends AbstractGateway
     }
 
 
+    public function moderated(array $parameters = [])
+    {
+        return $this->createRequest('\Omnipay\Meeg\Message\ModeratePayoutRequest', $parameters)
+            ->setEmail($this->getEmail())
+            ->setPassword($this->getPassword());
+    }
 
     public function purchase(array $parameters = [])
     {
