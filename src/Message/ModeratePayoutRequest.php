@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\PayPlanet\Message;
+namespace Omnipay\Meeg\Message;
 
 use Omnipay\Common\Message\AbstractRequest;
 

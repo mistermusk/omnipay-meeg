@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\InterKassa\Message;
+namespace Omnipay\Meeg\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 
