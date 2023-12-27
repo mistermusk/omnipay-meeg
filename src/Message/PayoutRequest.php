@@ -13,9 +13,23 @@ class PayoutRequest extends AbstractRequest
         return $this->getParameter('email');
     }
 
+    public function getSecret()
+    {
+        return $this->getParameter('secret');
+    }
+    public function setSecret($value)
+    {
+        return $this->setParameter('secret', $value);
+    }
+
+
     public function getPassword()
     {
         return $this->getParameter('password');
+    }
+    public function setPassword($value)
+    {
+        return $this->setParameter('password', $value);
     }
 
     public function setEmail($value)
@@ -23,10 +37,7 @@ class PayoutRequest extends AbstractRequest
         return $this->setParameter('email', $value);
     }
 
-    public function setPassword($value)
-    {
-        return $this->setParameter('password', $value);
-    }
+
 
     public function getCurrency()
     {

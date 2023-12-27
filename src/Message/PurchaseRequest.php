@@ -13,6 +13,15 @@ class PurchaseRequest extends AbstractRequest
         return $this->getParameter('email');
     }
 
+    public function getSecret()
+    {
+        return $this->getParameter('secret');
+    }
+    public function setSecret($value)
+    {
+        return $this->setParameter('secret', $value);
+    }
+
     public function getPassword()
     {
         return $this->getParameter('password');
